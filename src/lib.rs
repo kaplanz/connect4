@@ -164,7 +164,7 @@ impl Board {
         // Add all diagonals
         for i in 0..ROWS {
             lines.push(
-                (0..i)
+                (0..=i)
                     .rev()
                     .zip(0..COLS)
                     .map(|(row, col)| &self.0[row][col])
