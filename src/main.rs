@@ -4,14 +4,6 @@ use connect4::{Connect4, Player, Turn};
 use gamesweet::{ai, Config, Game, TurnFn};
 
 fn main() {
-    // Initialize logger
-    env_logger::Builder::new()
-        .default_format()
-        .format_indent(Some(12))
-        .format_timestamp(None)
-        .parse_default_env()
-        .init();
-
     // Create a Connect4 game
     let game = Connect4::new();
 
